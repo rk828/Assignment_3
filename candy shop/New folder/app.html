@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smoothie Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Smoothie Order Form</h1>
+  <form id="smoothieForm">
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" required><br>
+
+    <label for="smoothieType">Smoothie Type:</label>
+    <select id="smoothieType" required>
+      <option value="" disabled selected>Select Smoothie Type</option>
+      <option value="Strawberry Banana">Strawberry Banana</option>
+      <option value="Mango Tango">Mango Tango</option>
+      <option value="Green Machine">Green Machine</option>
+      <!-- Add more smoothie options here -->
+    </select><br>
+
+    <label for="size">Size:</label>
+    <input type="radio" id="small" name="size" value="Small" required>
+    <label for="small">Small</label>
+    <input type="radio" id="medium" name="size" value="Medium">
+    <label for="medium">Medium</label>
+    <input type="radio" id="large" name="size" value="Large">
+    <label for="large">Large</label><br>
+
+    <label for="toppings">Toppings:</label><br>
+    <input type="checkbox" id="whippedCream" name="toppings" value="Whipped Cream">
+    <label for="whippedCream">Whipped Cream</label>
+    <input type="checkbox" id="chocolateChips" name="toppings" value="Chocolate Chips">
+    <label for="chocolateChips">Chocolate Chips</label>
+    <input type="checkbox" id="berries" name="toppings" value="Mixed Berries">
+    <label for="berries">Mixed Berries</label>
+    <!-- Add more topping options here -->
+
+    <br><br>
+    <button type="submit">Order Smoothie</button>
+  </form>
+
+  <div id="smoothieDescription"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
